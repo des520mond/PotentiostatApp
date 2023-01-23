@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/design_default_color_background"
+    android:id="@+id/cvMeasurement"
+    tools:context=".CVMeasurement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/CVTitle"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/upper_vertex_potential"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/lower_vertex_potential"/>
+
+            <TextView
+                android:id="@+id/txtUpperVertexPotential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/text_value"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtLowerVertexPotential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/text_value"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/scan_rate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/no_of_cross"/>
+
+            <TextView
+                android:id="@+id/txtScanRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/text_value"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtNoOfCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/text_value"
+                android:textSize="24sp" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.ScatterChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scatterChart">
+
+            </com.github.mikephil.charting.charts.ScatterChart>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="25dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/startscanning" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/save_measurement" />
+
+            <Button
+                android:id="@+id/btnReturn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/return_to_dashboard" />
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

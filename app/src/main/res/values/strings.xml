@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="CAP">CAP</string>
+    <string name="CV">CV</string>
+    <string name="DPV">DPV</string>
+    <string name="EIS">EIS</string>
+    <string name="Setting">Setting</string>
+    <string name="Title">Potentiostat</string>
+    <string name="ProcedureTitle">Select Procedure:</string>
+    <string name="SavedScansTitle">Saved Scans:</string>
+
+    <string name="CAPTitle">Chronoamperometry</string>
+    <string name="CVTitle">Cyclic Voltammetry</string>
+    <string name="DPVTitle">Differential Pulse Voltammetry</string>
+    <string name="EISTitle">Electrochemical Impedance Spectroscopy</string>
+    <string name="start_potential">Start Potential:</string>
+    <string name="upper_vertex_potential">Upper Vertex Potential:</string>
+    <string name="lower_vertex_potential">Lower Vertex Potential:</string>
+    <string name="stop_potential">Stop Potential:</string>
+    <string name="scan_rate">Scan Rate:</string>
+    <string name="no_of_cross">Number of Cross:</string>
+    <string name="startscanning">Start Scanning</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="wait_time">Wait Time</string>
+    <string name="text_value">Text Value</string>
+    <string name="save_measurement">Save Measurement</string>
+    <string name="return_to_dashboard">Return to Dashboard</string>
+
+</resources>
